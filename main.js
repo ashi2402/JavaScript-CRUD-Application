@@ -69,8 +69,8 @@ document.getElementById("firstInner").style.display = 'block';
 
 //save new data after editing
 
-var editName = getValue("fname_1")   ;
-var editName =  getValue("lname_1")  ;
+var editfirstName = getValue("fname_1")   ;
+var editlastName =  getValue("lname_1")  ;
 var editEmail = getValue("email_1")  ;
 var editPhone = getValue("phone_1") ; 
 var editId = getValue("idValue");    
@@ -79,8 +79,8 @@ var editId = getValue("idValue");
 objIndex = dataArr.findIndex((obj => obj.id == editId));
 
 
-dataArr[objIndex].firstName = editName;
-dataArr[objIndex].lastName = editName;
+dataArr[objIndex].firstName = editfirstName;
+dataArr[objIndex].lastName = editlastName;
 dataArr[objIndex].email = editEmail;
 dataArr[objIndex].phone = editPhone;
 
